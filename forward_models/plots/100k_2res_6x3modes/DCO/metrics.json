@@ -1,0 +1,15 @@
+{
+ "model": "DCO",
+ "dataset": "100k_2res_6x3modes",
+ "parameters": 147094,
+ "forward": {
+  "rmse_db": 1.1125983736108618,
+  "mae_db": 0.4952662607909041,
+  "r2": 0.9869919609429599,
+  "pearson_r": 0.9935888379529061,
+  "pearson_r_per_spectrum": 0.9938604601349506,
+  "rmse_at_peaks_db": 3.70612155486997,
+  "rmse_off_peaks_db": 0.9972374300171952,
+  "error_at_highest_peak_db": 3.3171412940979006
+ }
+}

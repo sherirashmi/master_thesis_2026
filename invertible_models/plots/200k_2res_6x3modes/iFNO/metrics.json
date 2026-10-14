@@ -1,0 +1,65 @@
+{
+ "model": "iFNO",
+ "dataset": "200k_2res_6x3modes",
+ "parameters": 188405,
+ "forward": {
+  "rmse_db": 2.3713529333957015,
+  "mae_db": 1.160656686774599,
+  "r2": 0.9450006688390047,
+  "pearson_r": 0.9721432879879658,
+  "pearson_r_per_spectrum": 0.9718633834910179,
+  "rmse_at_peaks_db": 11.200936225765757,
+  "rmse_off_peaks_db": 1.801375719937917,
+  "error_at_highest_peak_db": 12.177853870010376
+ },
+ "inverse": {
+  "first_sample": {
+   "rmse_db": 9.874852700202668,
+   "mae_db": 6.185974619032141,
+   "r2": 0.04079954617990056,
+   "pearson_r": 0.5169354206876253,
+   "pearson_r_per_spectrum": 0.5190898842060215,
+   "rmse_at_peaks_db": 29.225728361307468,
+   "rmse_off_peaks_db": 9.089583829621647,
+   "error_at_highest_peak_db": 38.21453155517578
+  },
+  "own_forward_pick": {
+   "rmse_db": 7.764941604544052,
+   "mae_db": 4.504031441267147,
+   "r2": 0.4069046605785749,
+   "pearson_r": 0.7011137869418244,
+   "pearson_r_per_spectrum": 0.7018666742300053,
+   "rmse_at_peaks_db": 24.897877812112196,
+   "rmse_off_peaks_db": 7.019967277300547,
+   "error_at_highest_peak_db": 31.08117950439453
+  },
+  "point_estimate": {
+   "rmse_db": 8.220909395326423,
+   "mae_db": 4.7239023150320465,
+   "r2": 0.33520484319575483,
+   "pearson_r": 0.6646897583308233,
+   "pearson_r_per_spectrum": 0.6657922427834836,
+   "rmse_at_peaks_db": 25.914349386513173,
+   "rmse_off_peaks_db": 7.462966344284595,
+   "error_at_highest_peak_db": 33.30736595153809
+  },
+  "best_of_samples_oracle": {
+   "rmse_db": 7.696602185188577,
+   "mae_db": 4.456604471935386,
+   "r2": 0.41729841048361804,
+   "pearson_r": 0.7050207361388342,
+   "pearson_r_per_spectrum": 0.7036840179574001,
+   "rmse_at_peaks_db": 24.93276340038239,
+   "rmse_off_peaks_db": 6.940338299452096,
+   "error_at_highest_peak_db": 31.13404037475586
+  },
+  "design_recovery_pearson_r": {
+   "m": 0.6116885472084939,
+   "f_t": 0.8686011283920969,
+   "x": 0.7240519890755427,
+   "y": 0.25265549245145386
+  },
+  "num_targets": 100,
+  "num_samples": 8
+ }
+}

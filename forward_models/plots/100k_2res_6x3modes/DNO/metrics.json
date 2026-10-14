@@ -1,0 +1,15 @@
+{
+ "model": "DNO",
+ "dataset": "100k_2res_6x3modes",
+ "parameters": 143434,
+ "forward": {
+  "rmse_db": 1.2117052157439157,
+  "mae_db": 0.5537573819537496,
+  "r2": 0.9845713138287143,
+  "pearson_r": 0.9924351022461629,
+  "pearson_r_per_spectrum": 0.9927556996488122,
+  "rmse_at_peaks_db": 3.8407184049289227,
+  "rmse_off_peaks_db": 1.099791076458731,
+  "error_at_highest_peak_db": 3.4855595848083496
+ }
+}

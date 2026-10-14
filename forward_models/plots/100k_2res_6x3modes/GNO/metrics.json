@@ -1,0 +1,15 @@
+{
+ "model": "GNO",
+ "dataset": "100k_2res_6x3modes",
+ "parameters": 143718,
+ "forward": {
+  "rmse_db": 2.1073965070780747,
+  "mae_db": 1.0081465857255498,
+  "r2": 0.9533311066679819,
+  "pearson_r": 0.980496741025933,
+  "pearson_r_per_spectrum": 0.9821708178412427,
+  "rmse_at_peaks_db": 4.801228636040872,
+  "rmse_off_peaks_db": 2.019571809941587,
+  "error_at_highest_peak_db": 5.049449868774414
+ }
+}

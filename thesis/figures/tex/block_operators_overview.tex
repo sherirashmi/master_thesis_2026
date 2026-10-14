@@ -1,0 +1,37 @@
+\documentclass[border=3pt]{standalone}
+\input{blocks_common}
+\begin{document}
+\begin{tikzpicture}
+% ---- forward operators
+\node[font=\bfseries] at (0,5.0) {Forward Operators};
+\node[icon] (f1) at (0,3.8) {}; \plateicon{(f1.center)}{-0.8/-0.6, 0.1/0.7, 0.8/-0.5}
+\node[plain, minimum width=3.4cm, minimum height=1.3cm] (fm) at (0,1.8) {Architecture\\ Design $\to$ ERP};
+\node[icon] (f2) at (0,-0.4) {}; \spectrumicon{(f2.center)}
+\draw[fwd] (f1.south) -- (fm.north);  \draw[fwd] (fm.south) -- (f2.north);
+\node[note, text=fwdc] at (0,-1.45) {one design gives one ERP\\ (one-to-one)};
+% ---- inverse operators
+\node[font=\bfseries] at (5.4,5.0) {Inverse Operators};
+\node[icon] (i1) at (5.4,3.8) {}; \spectrumicon{(i1.center)}
+\node[plain, minimum width=3.4cm, minimum height=1.3cm] (im) at (5.4,1.8) {Architecture\\ ERP $\to$ Design};
+\node[icon] (id1) at (3.65,-0.4) {}; \plateicon{(id1.center)}{-0.8/-0.6, 0.1/0.7, 0.8/-0.5}
+\node[icon] (id2) at (5.4,-0.4)  {}; \plateicon{(id2.center)}{-0.8/0.6, 0/-0.7, 0.8/0.4}
+\node[icon] (id3) at (7.15,-0.4) {}; \plateicon{(id3.center)}{-0.8/-0.2, 0.1/0.8, 0.8/-0.7}
+\draw[inv] ($(im.south)+(-1.2,0)$) -- (id1.north);
+\draw[inv] (im.south) -- (id2.north);
+\draw[inv] ($(im.south)+(1.2,0)$) -- (id3.north);
+\draw[inv] (i1.south) -- (im.north);
+\node[note, text=invc] at (5.4,-1.45) {many designs share one ERP\\ (many-to-one)};
+% ---- invertible operators
+\node[font=\bfseries] at (10.8,5.0) {Invertible Operators};
+\node[plain, minimum width=3.4cm, minimum height=1.3cm] (vm) at (10.8,1.8) {Architecture\\ Design $\leftrightarrow$ ERP};
+\node[icon] (vd1) at (9.05,3.8)  {}; \plateicon{(vd1.center)}{-0.8/-0.6, 0.1/0.7, 0.8/-0.5}
+\node[icon] (vd2) at (10.8,3.8)  {}; \plateicon{(vd2.center)}{-0.8/0.6, 0/-0.7, 0.8/0.4}
+\node[icon] (vd3) at (12.55,3.8) {}; \plateicon{(vd3.center)}{-0.8/-0.2, 0.1/0.8, 0.8/-0.7}
+\draw[fwd] ($(vd1.south)+(-0.14,0)$) -- ($(vm.north)+(-0.9-0.14,0)$);  \draw[inv] ($(vm.north)+(-0.9+0.14,0)$) -- ($(vd1.south)+(0.14,0)$);
+\draw[fwd] ($(vd2.south)+(-0.14,0)$) -- ($(vm.north)+(-0.14,0)$);      \draw[inv] ($(vm.north)+(0.14,0)$) -- ($(vd2.south)+(0.14,0)$);
+\draw[fwd] ($(vd3.south)+(-0.14,0)$) -- ($(vm.north)+(0.9-0.14,0)$);   \draw[inv] ($(vm.north)+(0.9+0.14,0)$) -- ($(vd3.south)+(0.14,0)$);
+\node[icon] (v2) at (10.8,-0.4) {}; \spectrumicon{(v2.center)}
+\draw[fwd] ($(vm.south)+(-0.14,0)$) -- ($(v2.north)+(-0.14,0)$);
+\draw[inv] ($(v2.north)+(0.14,0)$) -- ($(vm.south)+(0.14,0)$);
+\end{tikzpicture}
+\end{document}

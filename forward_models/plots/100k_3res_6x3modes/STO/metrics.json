@@ -1,0 +1,15 @@
+{
+ "model": "STO",
+ "dataset": "100k_3res_6x3modes",
+ "parameters": 144213,
+ "forward": {
+  "rmse_db": 2.929752211911916,
+  "mae_db": 1.540912747459792,
+  "r2": 0.905516386206244,
+  "pearson_r": 0.9626322135220489,
+  "pearson_r_per_spectrum": 0.9651125607370208,
+  "rmse_at_peaks_db": 5.30847501241366,
+  "rmse_off_peaks_db": 2.8541287713478427,
+  "error_at_highest_peak_db": 5.081924160766602
+ }
+}

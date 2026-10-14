@@ -1,0 +1,29 @@
+\documentclass[border=3pt]{standalone}
+\input{blocks_common}
+\begin{document}
+\begin{tikzpicture}
+% forward row
+\node[font=\small] at (0,3.05) {Design $\bm a$};
+\node[icon] (d1) at (0,2.0) {}; \plateicon{(d1.center)}{-0.5/0.1, 0.5/0.1}
+\node[block, minimum width=2.6cm, minimum height=1.2cm] (P) at (2.7,2.0) {Lift $P$\\ {\footnotesize Design, $f\to$ Latent}};
+\node[block, minimum width=2.6cm, minimum height=1.2cm] (Q) at (11.1,2.0) {Readout $Q$\\ {\footnotesize Latent $\to$ ERP}};
+\node[icon] (e1) at (13.9,2.0) {}; \spectrumicon{(e1.center)}
+\node[font=\small] at (13.9,3.05) {ERP$(f)$};
+% coupling stack with the gate
+\node[plain, minimum width=4.2cm, minimum height=4.2cm, anchor=center] (stack) at (6.9,1.1) {};
+\node[font=\normalsize, text=navy] at (6.9,2.85) {Coupling stack};
+\node[note] at (6.9,2.4) {same weights both ways};
+\node[plain, minimum width=3.3cm, minimum height=1.9cm, draw=black!60, line width=0.6pt] (gate) at (6.9,0.7)
+   {Gate $L$\\ {\footnotesize changes with the model:}\\ {\footnotesize iDNO, iDCO, iFNO,}\\ {\footnotesize iLNO, iGNO, iSTO}};
+% inverse row
+\node[icon] (e2) at (13.9,-0.6) {}; \spectrumicon{(e2.center)}
+\node[block, fill=boxorange, draw=edgeorange, minimum width=2.6cm, minimum height=1.2cm] (Pp) at (11.1,-0.6) {Lift $P'$\\ {\footnotesize ERP $\to$ Latent}};
+\node[block, fill=boxorange, draw=edgeorange, minimum width=2.6cm, minimum height=1.2cm] (Qp) at (2.7,-0.6) {Readout $Q'$\\ {\footnotesize Latent $\to$ Design}};
+\node[icon] (d2) at (0,-0.6) {}; \plateicon{(d2.center)}{-0.5/0.1, 0.5/0.1}
+\node[font=\small] at (0,-1.65) {designs $\hat{\bm a}$};
+\draw[fwd] (d1.east) -- (P.west);  \draw[fwd] (P.east) -- (stack.west |- P.east);
+\draw[fwd] (stack.east |- Q.west) -- (Q.west);  \draw[fwd] (Q.east) -- (e1.west);
+\draw[inv] (e2.west) -- (Pp.east);  \draw[inv] (Pp.west) -- (stack.east |- Pp.west);
+\draw[inv] (stack.west |- Qp.east) -- (Qp.east);  \draw[inv] (Qp.west) -- (d2.east);
+\end{tikzpicture}
+\end{document}

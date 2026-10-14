@@ -1,0 +1,15 @@
+{
+ "model": "FNO",
+ "dataset": "100k_3res_6x3modes",
+ "parameters": 153870,
+ "forward": {
+  "rmse_db": 2.7733757637284855,
+  "mae_db": 1.6198448024002023,
+  "r2": 0.9153333949058106,
+  "pearson_r": 0.9594118993576398,
+  "pearson_r_per_spectrum": 0.9608268194749937,
+  "rmse_at_peaks_db": 6.509808975801019,
+  "rmse_off_peaks_db": 2.630097812413797,
+  "error_at_highest_peak_db": 6.7731293731689455
+ }
+}

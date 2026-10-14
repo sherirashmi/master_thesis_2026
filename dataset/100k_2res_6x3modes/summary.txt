@@ -1,0 +1,15 @@
+Dataset 100k_2res_6x3modes
+configurations: 100000  resonators: 2  plate modes: 6x3 (18)
+split (train/val/test): 80000/10000/10000
+frequencies: 301 (10-160 Hz, step 0.5 Hz)
+ERP over all spectra: min 44.75  mean 84.00  max 176.85  std 9.75 dB
+peaks per spectrum (prominence 3 dB): mean 5.24  max 6
+bare-plate natural frequencies in band: 54.0, 72.3, 102.8, 145.6 Hz
+
+field        mean        std        min        max
+m           0.5500     0.2598     0.1000     1.0000
+k      197620.6094 204183.2344   422.5287 1007028.4375
+f_t        85.0000    43.3013    10.0013   159.9998
+x           0.7000     0.3753     0.0500     1.3500
+y           0.2500     0.1155     0.0500     0.4500
+zeta        0.0157     0.0196     0.0005     0.0800

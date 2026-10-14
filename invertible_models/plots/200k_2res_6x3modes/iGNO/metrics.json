@@ -1,0 +1,65 @@
+{
+ "model": "iGNO",
+ "dataset": "200k_2res_6x3modes",
+ "parameters": 62210,
+ "forward": {
+  "rmse_db": 3.773165353835042,
+  "mae_db": 2.0215755259783164,
+  "r2": 0.8607559352210578,
+  "pearson_r": 0.9282190627993118,
+  "pearson_r_per_spectrum": 0.9271576292465755,
+  "rmse_at_peaks_db": 17.324992762644232,
+  "rmse_off_peaks_db": 2.9261387774589047,
+  "error_at_highest_peak_db": 20.365119970703127
+ },
+ "inverse": {
+  "first_sample": {
+   "rmse_db": 10.17453581810507,
+   "mae_db": 6.54923767191231,
+   "r2": -0.01830372705525285,
+   "pearson_r": 0.4846305811637516,
+   "pearson_r_per_spectrum": 0.4879344202348242,
+   "rmse_at_peaks_db": 29.690643045191035,
+   "rmse_off_peaks_db": 9.391918844065668,
+   "error_at_highest_peak_db": 37.145228958129884
+  },
+  "own_forward_pick": {
+   "rmse_db": 8.065000462066875,
+   "mae_db": 4.784738575501299,
+   "r2": 0.3601813184758812,
+   "pearson_r": 0.6753224070731665,
+   "pearson_r_per_spectrum": 0.6759775607064101,
+   "rmse_at_peaks_db": 25.735108245345053,
+   "rmse_off_peaks_db": 7.299930458043835,
+   "error_at_highest_peak_db": 32.041891479492186
+  },
+  "point_estimate": {
+   "rmse_db": 8.317319895853933,
+   "mae_db": 4.874761555820604,
+   "r2": 0.31952067576863163,
+   "pearson_r": 0.6589007999379695,
+   "pearson_r_per_spectrum": 0.6575987482366185,
+   "rmse_at_peaks_db": 26.432835124868046,
+   "rmse_off_peaks_db": 7.53574861694744,
+   "error_at_highest_peak_db": 32.52410659790039
+  },
+  "best_of_samples_oracle": {
+   "rmse_db": 7.922971605879744,
+   "mae_db": 4.694249250342284,
+   "r2": 0.38251797128001086,
+   "pearson_r": 0.6860733428811793,
+   "pearson_r_per_spectrum": 0.6862843965228059,
+   "rmse_at_peaks_db": 25.38898528719801,
+   "rmse_off_peaks_db": 7.16392485912463,
+   "error_at_highest_peak_db": 31.107491760253907
+  },
+  "design_recovery_pearson_r": {
+   "m": 0.7047191762587015,
+   "f_t": 0.91367586993769,
+   "x": 0.6592973340053122,
+   "y": 0.1536332398457769
+  },
+  "num_targets": 100,
+  "num_samples": 8
+ }
+}

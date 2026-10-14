@@ -1,0 +1,65 @@
+{
+ "model": "iSTO",
+ "dataset": "200k_2res_6x3modes",
+ "parameters": 71089,
+ "forward": {
+  "rmse_db": 2.555571862048806,
+  "mae_db": 1.2516628566368078,
+  "r2": 0.9361234852382118,
+  "pearson_r": 0.9675497916671246,
+  "pearson_r_per_spectrum": 0.96721038128098,
+  "rmse_at_peaks_db": 11.707464222681832,
+  "rmse_off_peaks_db": 1.9850205749567431,
+  "error_at_highest_peak_db": 12.98450682144165
+ },
+ "inverse": {
+  "first_sample": {
+   "rmse_db": 10.09562637010238,
+   "mae_db": 6.3957193089482,
+   "r2": -0.0025699007179895705,
+   "pearson_r": 0.494639205585639,
+   "pearson_r_per_spectrum": 0.4975004138449309,
+   "rmse_at_peaks_db": 29.511390379972227,
+   "rmse_off_peaks_db": 9.315901497019244,
+   "error_at_highest_peak_db": 38.80041145324707
+  },
+  "own_forward_pick": {
+   "rmse_db": 7.833305559291763,
+   "mae_db": 4.534568713115299,
+   "r2": 0.39641524965977626,
+   "pearson_r": 0.6952552813833368,
+   "pearson_r_per_spectrum": 0.6957052008760454,
+   "rmse_at_peaks_db": 25.274427510994546,
+   "rmse_off_peaks_db": 7.070745553606641,
+   "error_at_highest_peak_db": 32.38471405029297
+  },
+  "point_estimate": {
+   "rmse_db": 8.409231075635445,
+   "mae_db": 4.883001360212053,
+   "r2": 0.3043982012142249,
+   "pearson_r": 0.6511758966224974,
+   "pearson_r_per_spectrum": 0.6520277432179087,
+   "rmse_at_peaks_db": 26.63163249500738,
+   "rmse_off_peaks_db": 7.625450375994324,
+   "error_at_highest_peak_db": 33.50492790222168
+  },
+  "best_of_samples_oracle": {
+   "rmse_db": 7.74518401066347,
+   "mae_db": 4.4957019285030935,
+   "r2": 0.4099190370598327,
+   "pearson_r": 0.7014627904642657,
+   "pearson_r_per_spectrum": 0.7022883769828538,
+   "rmse_at_peaks_db": 25.09674563263629,
+   "rmse_off_peaks_db": 6.983679487371019,
+   "error_at_highest_peak_db": 31.81480697631836
+  },
+  "design_recovery_pearson_r": {
+   "m": 0.7108133238794342,
+   "f_t": 0.913572780856138,
+   "x": 0.7174840333041522,
+   "y": 0.2246350266510039
+  },
+  "num_targets": 100,
+  "num_samples": 8
+ }
+}

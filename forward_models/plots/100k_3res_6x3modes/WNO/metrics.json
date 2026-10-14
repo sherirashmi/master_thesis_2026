@@ -1,0 +1,15 @@
+{
+ "model": "WNO",
+ "dataset": "100k_3res_6x3modes",
+ "parameters": 153626,
+ "forward": {
+  "rmse_db": 3.045853142525562,
+  "mae_db": 1.752597793368723,
+  "r2": 0.8978795702800255,
+  "pearson_r": 0.9530270850492313,
+  "pearson_r_per_spectrum": 0.9545772546412212,
+  "rmse_at_peaks_db": 7.323976716909845,
+  "rmse_off_peaks_db": 2.878718618103832,
+  "error_at_highest_peak_db": 9.330036817932129
+ }
+}

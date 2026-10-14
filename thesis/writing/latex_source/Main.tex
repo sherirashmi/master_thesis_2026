@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\usepackage[ansinew]{inputenc}
+\usepackage{amsmath,mathtools}
+\usepackage[toc,page]{appendix}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{hyperref}
+%\usepackage{graphicx} ALT
+\usepackage{graphicx} %NEU
+\usepackage{caption, subcaption}
+\usepackage{framed} 
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{comment}
+\colorlet{shadecolor}{gray!25}
+\usepackage{setspace}
+\usepackage{verbatim}
+\usepackage{pdflscape}
+\usepackage{needspace}
+%\usepackage{caption,subcaption}
+\usepackage{rotating}
+%\usepackage[nolist,nohyperlinks]{acronym}
+\usepackage[acronym]{glossaries}
+\makeglossaries
+\usepackage{lipsum}
+%\usepackage{subfig,graphicx,showframe}
+\usepackage{pdfpages}
+\usepackage[export]{adjustbox}
+\usepackage[section]{placeins}
+%\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=2.5cm,
+  %includeheadfoot
+]{geometry}
+\onehalfspacing
+\usepackage[defernumbers=true,backend=biber,style=numeric-comp, maxnames=50, block=none, natbib=true,sorting=none]{biblatex}
+\renewbibmacro{in:}{}
+
+\DeclareFieldFormat[article]{volume}{\textbf{#1}\space}
+\DeclareFieldFormat[article]{number}{\textbf{#1}\space}
+\DeclareFieldFormat[article]{pages}{\textnormal{#1}\space}
+%\DeclareFieldFormat[article]{}{\textnormal{#1}\space}
+%\DeclareFieldFormat[article]{journal}{\textnormal{#1}\space}
+\addbibresource{Semesterarbeit.bib}
+
+
+
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.3\textwidth]{Bilder/TUM_Logo.png
+ }\par\vspace{1cm}
+	{\scshape\LARGE Technical University of Munich \par}
+	\vspace{2.5cm}
+ 	{\huge\bfseries Invertible Neural Networks for Generative Design of Metamaterials \par}
+	\vspace{2.0cm}
+        {\Large Scientific work to obtain the degree\par}
+	\vspace{0.5cm}
+	{\scshape\Large \textbf{Master of Science (M.Sc.)}\par}
+	\vspace{0.5cm}
+        {\Large at the TUM School of Engineering and Design\par}
+	\vspace{2.0cm}
+	{\Large \textbf{Submitted by:} Rashmi Reddy Sheri \\ \scshape \textbf{Matriculation number:} 03803228 \par}
+	\vfill
+        %\includepdf[]{utg_Logo}
+	\textbf{Supervised by:} \par
+          Prof. Dr. Steffen \textsc{Marburg} \par
+	   Mert \textsc{Dogu} \par
+	   Chair of Vibroacoustics of Vehicles and Machines
+	\vfill
+
+% Bottom of the page
+	{\large \textbf{Submitted on:}  \today\par}
+\end{titlepage}
+
+\input{Abstract.tex}
+{\sloppy\input{Kurzfassung.tex}}
+\input{Danksagung.tex}
+
+
+
+%\includepdf[pages=-]{MA_SoundExperienceBeforeBirth}
+
+\newpage
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+%\listoftables
+\newpage
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+%\listofabbrevations
+\newpage
+\begingroup
+\chapter*{List of Abbreviations} 
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\input{Abkuerzungen.tex}
+%\listofsymboles
+\let\clearpage\relax
+\chapter*{List of Symbols} 
+\addcontentsline{toc}{chapter}{List of Symbols}
+\input{Symbols.tex}
+\endgroup
+
+\chapter{Introduction and Literature Review}
+\label{ch:intro}
+\input{Introduction}
+\FloatBarrier
+\newpage
+\chapter{Theoretical Basics}
+\label{ch:theory}
+\input{Theoreticalbasics.tex}
+\FloatBarrier
+\newpage
+\chapter{Research Concept}
+\label{ch:concept}
+\input{Researchconcept.tex}
+\FloatBarrier
+\newpage
+
+\chapter{Results}
+\label{ch:results}
+\input{Results.tex}
+\FloatBarrier
+\newpage
+\chapter{Conclusions and Outlook}
+\label{ch:conclusions}
+\input{Conclusions.tex}
+\FloatBarrier
+\newpage
+\medskip
+\printbibliography
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\newpage
+\appendix
+\chapter{Frequency Holdout: Extrapolation Beyond the Training Band}
+\input{AppendixA.tex}
+\newpage
+\chapter{Attachment}
+\input{Anhang.tex}
+\newpage
+\input{Erklärung.tex}
+\end{document} 

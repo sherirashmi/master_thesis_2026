@@ -1,0 +1,34 @@
+\documentclass[border=3pt]{standalone}
+\input{blocks_common}
+\begin{document}
+\begin{tikzpicture}
+% inputs
+\node[icon] (res) at (0,1.5) {}; \plateicon{(res.center)}{-0.8/-0.6, 0.1/0.7, 0.8/-0.5}
+\node[font=\small, align=center] at (0,0.1) {Resonators\\ $(m,k,f_t,x,y)$\\ $i=1,2,3$};
+\node[font=\small, align=center] (freq) at (0,-1.3) {Frequency $f$\\ 301 points};
+% encoders
+\node[block, minimum width=3.0cm, minimum height=0.9cm] (enc) at (4.0,2.4) {Resonator encoder};
+\node[block, fill=boxgreen, draw=edgegreen, minimum width=3.0cm, minimum height=0.95cm] (qry) at (4.0,0.5) {Resonance query};
+\node[block, fill=boxteal, draw=edgeteal, minimum width=3.0cm, minimum height=0.9cm] (fenc) at (4.0,-1.3) {Frequency encoder};
+% branching of the inputs
+\draw[fwdc, line width=0.9pt] (res.east) -- (2.0,1.5);
+\draw[fwdc, line width=0.9pt] (2.0,2.4) -- (2.0,0.7);
+\fill[fwdc] (2.0,1.5) circle (1.6pt);
+\draw[fwd] (2.0,2.4) -- (enc.west);  \draw[fwd] (2.0,0.7) -- ($(qry.west)+(0,0.2)$);
+\draw[fwdc, line width=0.9pt] (freq.east) -- (2.0,-1.3);
+\draw[fwdc, line width=0.9pt] (2.0,-1.3) -- (2.0,0.3);
+\fill[fwdc] (2.0,-1.3) circle (1.6pt);
+\draw[fwd] (2.0,0.3) -- ($(qry.west)+(0,-0.2)$);  \draw[fwd] (2.0,-1.3) -- (fenc.west);
+% core, decoder, output
+\node[plain, minimum width=3.8cm, minimum height=2.6cm, line width=1.1pt] (core) at (8.9,0.5)
+   {{\large Core architecture}\\[2pt] {\footnotesize Architecture-specific:}\\[1pt] {\footnotesize DON, DNO, DCO, SIREN, FNO,}\\ {\footnotesize WNO, LNO, GNO, STO}};
+\node[font=\footnotesize] at (8.9,2.2) {Only block that changes};
+\node[block, fill=boxpurple, draw=edgepurple, minimum width=2.0cm, minimum height=0.95cm] (dec) at (12.5,0.5) {Decoder};
+\node[icon] (out) at (14.95,0.5) {}; \spectrumicon{(out.center)}
+\node[font=\small] at (14.95,1.55) {ERP$(f)$};
+\draw[fwd] (enc.east) -- ($(core.west)+(0,1.0)$);
+\draw[fwd] (qry.east) -- (core.west |- qry.east);
+\draw[fwd] (fenc.east) -- ($(core.west)+(0,-1.0)$);
+\draw[fwd] (core.east) -- (dec.west);  \draw[fwd] (dec.east) -- (out.west);
+\end{tikzpicture}
+\end{document}

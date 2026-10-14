@@ -1,0 +1,47 @@
+\documentclass[border=3pt]{standalone}
+\input{blocks_common}
+\begin{document}
+\begin{tikzpicture}
+% design and frequency inputs
+\node[icon] (des) at (0,1.7) {}; \plateicon{(des.center)}{-0.5/0.1, 0.5/0.1}
+\node[font=\small, align=center] at (0,0.45) {Design $\bm a$\\ $(m,f_t,x,y)\times 2$};
+\node[font=\small] (freq) at (0,-1.0) {Frequency $f$};
+% branch network (invertible)
+\draw[group, draw=edgeblue] (2.0,0.5) rectangle (7.6,3.0);
+\node[font=\small, text=navy] at (4.8,2.7) {Branch network (invertible)};
+\node[plain, minimum width=2.4cm, minimum height=0.9cm] (nvp) at (3.7,1.7) {RealNVP};
+\node[plain, minimum width=0.9cm, minimum height=0.9cm] (b) at (6.5,1.7) {$\bm b$};
+\node[note] at (3.7,0.85) {Q8: $Q=D=8$\\ Q64: $Q=64$};
+\node[note] at (6.5,0.8) {$Q$ coefficients};
+% trunk network
+\draw[group, draw=edgegreen] (2.0,-2.0) rectangle (7.6,0.15);
+\node[font=\small, text=navy] at (4.8,-0.2) {Trunk network};
+\node[plain, minimum width=2.4cm, minimum height=0.9cm] (trunk) at (3.7,-1.0) {Trunk net};
+\node[note] at (3.7,-1.62) {dense layers};
+\node[plain, minimum width=0.9cm, minimum height=0.9cm] (psi) at (6.5,-1.0) {$\Psi(f)$};
+\node[note] at (6.5,-1.62) {basis, QR-orthonormal};
+% combination and output
+\node[circle, draw=navy, line width=1.0pt, minimum size=1.1cm, inner sep=0] (sum) at (9.4,1.7) {};
+\fill[navy] (sum.center) circle (2.2pt);
+\node[font=\small] at (9.4,2.65) {$\Psi\bm b+\psi_0$};
+\node[icon] (out) at (12.3,1.7) {}; \spectrumicon{(out.center)}
+\node[font=\small] at (12.3,2.75) {ERP$(f)$};
+% forward path
+\draw[fwd] ($(des.east)+(0,0.12)$) -- ($(nvp.west)+(0,0.12)$);
+\draw[fwd] ($(nvp.east)+(0,0.12)$) -- ($(b.west)+(0,0.12)$);
+\draw[fwd] ($(b.east)+(0,0.12)$) -- ($(sum.west)+(0,0.12)$);
+\draw[fwd] ($(sum.east)+(0,0.12)$) -- ($(out.west)+(0,0.12)$);
+\draw[fwd] (freq.east) -- (trunk.west);  \draw[fwd] (trunk.east) -- (psi.west);
+\draw[fwdc, line width=0.9pt] (psi.east) -- (9.4,-1.0);  \draw[fwd] (9.4,-1.0) -- (sum.south);
+% inverse path
+\draw[inv] ($(out.west)+(0,-0.12)$) -- ($(sum.east)+(0,-0.12)$);
+\draw[inv] ($(sum.west)+(0,-0.12)$) -- ($(b.east)+(0,-0.12)$);
+\draw[inv] ($(b.west)+(0,-0.12)$) -- ($(nvp.east)+(0,-0.12)$);
+\draw[inv] ($(nvp.west)+(0,-0.12)$) -- ($(des.east)+(0,-0.12)$);
+\node[font=\footnotesize, text=invc, align=center] at (11.2,0.55) {inverse:\\ $\bm b^{\ast}=\Psi^{\top}(\bm y-\psi_0)/F$};
+\node[note] at (11.2,-0.45) {$\Psi$ is shared by\\ both directions};
+% legend
+\draw[fwd] (9.9,-1.25) -- (10.9,-1.25); \node[note, anchor=west, text=fwdc] at (11.0,-1.25) {forward: design $\to$ ERP};
+\draw[inv] (9.9,-1.8) -- (10.9,-1.8);   \node[note, anchor=west, text=invc] at (11.0,-1.8) {inverse: ERP $\to$ designs};
+\end{tikzpicture}
+\end{document}

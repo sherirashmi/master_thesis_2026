@@ -1,0 +1,522 @@
+[
+ {
+  "model": "iDON",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 1384257,
+  "forward": {
+   "rmse_db": 2.673078013815555,
+   "mae_db": 1.4140290091486072,
+   "r2": 0.9301143056756317,
+   "pearson_r": 0.9644251418412919,
+   "pearson_r_per_spectrum": 0.9641568368509146,
+   "rmse_at_peaks_db": 13.613261116240938,
+   "rmse_off_peaks_db": 1.8997847587674968,
+   "error_at_highest_peak_db": 17.156757397460936
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 6.780773720477085,
+    "mae_db": 3.5488879359045695,
+    "r2": 0.5477207880967998,
+    "pearson_r": 0.7732617579025348,
+    "pearson_r_per_spectrum": 0.7710687794172597,
+    "rmse_at_peaks_db": 22.835083125987836,
+    "rmse_off_peaks_db": 6.051506688216309,
+    "error_at_highest_peak_db": 27.229986419677733
+   },
+   "own_forward_pick": {
+    "rmse_db": 5.77928511158247,
+    "mae_db": 2.882724263897766,
+    "r2": 0.6714538643666559,
+    "pearson_r": 0.8362603873371895,
+    "pearson_r_per_spectrum": 0.8350650397307672,
+    "rmse_at_peaks_db": 20.16638607247694,
+    "rmse_off_peaks_db": 5.1042229110660235,
+    "error_at_highest_peak_db": 22.726034927368165
+   },
+   "point_estimate": {
+    "rmse_db": 6.780773720477085,
+    "mae_db": 3.5488879359045695,
+    "r2": 0.5477207880967998,
+    "pearson_r": 0.7732617579025348,
+    "pearson_r_per_spectrum": 0.7710687794172597,
+    "rmse_at_peaks_db": 22.835083125987836,
+    "rmse_off_peaks_db": 6.051506688216309,
+    "error_at_highest_peak_db": 27.229986419677733
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 5.650194395066593,
+    "mae_db": 2.833190508490781,
+    "r2": 0.6859672784922715,
+    "pearson_r": 0.8429527673403637,
+    "pearson_r_per_spectrum": 0.8411738860458948,
+    "rmse_at_peaks_db": 19.868112233730418,
+    "rmse_off_peaks_db": 4.9783172130645745,
+    "error_at_highest_peak_db": 23.085295028686524
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.4464132074706342,
+    "f_t": 0.9060819739035045,
+    "x": 0.6899176915445907,
+    "y": 0.22381021600471848
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iDON_Q8",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 938665,
+  "forward": {
+   "rmse_db": 6.0474573659777215,
+   "mae_db": 3.6320742663145857,
+   "r2": 0.6423068302484469,
+   "pearson_r": 0.8015522044508621,
+   "pearson_r_per_spectrum": 0.7980379831950846,
+   "rmse_at_peaks_db": 24.53993457543207,
+   "rmse_off_peaks_db": 5.034463483566794,
+   "error_at_highest_peak_db": 31.364919399642943
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.077281797018413,
+    "mae_db": 6.492580547649599,
+    "r2": 0.0010702916877907143,
+    "pearson_r": 0.499687281947452,
+    "pearson_r_per_spectrum": 0.4957776721164614,
+    "rmse_at_peaks_db": 29.818553380600786,
+    "rmse_off_peaks_db": 9.276313127529201,
+    "error_at_highest_peak_db": 37.513264694213866
+   },
+   "own_forward_pick": {
+    "rmse_db": 10.077281797018413,
+    "mae_db": 6.492580547649599,
+    "r2": 0.0010702916877907143,
+    "pearson_r": 0.499687281947452,
+    "pearson_r_per_spectrum": 0.4957776721164614,
+    "rmse_at_peaks_db": 29.818553380600786,
+    "rmse_off_peaks_db": 9.276313127529201,
+    "error_at_highest_peak_db": 37.513264694213866
+   },
+   "point_estimate": {
+    "rmse_db": 10.077281797018413,
+    "mae_db": 6.492580547649599,
+    "r2": 0.0010702916877907143,
+    "pearson_r": 0.499687281947452,
+    "pearson_r_per_spectrum": 0.4957776721164614,
+    "rmse_at_peaks_db": 29.818553380600786,
+    "rmse_off_peaks_db": 9.276313127529201,
+    "error_at_highest_peak_db": 37.513264694213866
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 8.500638345183564,
+    "mae_db": 5.087138814831097,
+    "r2": 0.28919380784203985,
+    "pearson_r": 0.6438765286225618,
+    "pearson_r_per_spectrum": 0.6418994557270801,
+    "rmse_at_peaks_db": 25.91984172396077,
+    "rmse_off_peaks_db": 7.775591809122754,
+    "error_at_highest_peak_db": 31.920709915161133
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.3602334762728662,
+    "f_t": 0.8029075178345404,
+    "x": 0.4102743915494815,
+    "y": -0.05546900129580411
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iDNO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 84389,
+  "forward": {
+   "rmse_db": 2.698442502853881,
+   "mae_db": 1.3544428609087618,
+   "r2": 0.9287817407621275,
+   "pearson_r": 0.9637377001185131,
+   "pearson_r_per_spectrum": 0.9635388312493007,
+   "rmse_at_peaks_db": 12.478945083895514,
+   "rmse_off_peaks_db": 2.082192496735434,
+   "error_at_highest_peak_db": 14.495103867721557
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.336134892606005,
+    "mae_db": 6.718256046890817,
+    "r2": -0.050907424534134105,
+    "pearson_r": 0.47193970558388265,
+    "pearson_r_per_spectrum": 0.47921998776446256,
+    "rmse_at_peaks_db": 29.96448487704885,
+    "rmse_off_peaks_db": 9.553342422766532,
+    "error_at_highest_peak_db": 37.121675987243655
+   },
+   "own_forward_pick": {
+    "rmse_db": 8.064078718624014,
+    "mae_db": 4.698259343752433,
+    "r2": 0.3603275590064551,
+    "pearson_r": 0.6771637740122821,
+    "pearson_r_per_spectrum": 0.6778364929201078,
+    "rmse_at_peaks_db": 25.396676048084103,
+    "rmse_off_peaks_db": 7.322186784021662,
+    "error_at_highest_peak_db": 29.540878982543944
+   },
+   "point_estimate": {
+    "rmse_db": 8.485813448826258,
+    "mae_db": 4.99038276051366,
+    "r2": 0.29167090111880956,
+    "pearson_r": 0.6459652810368299,
+    "pearson_r_per_spectrum": 0.6488692446140162,
+    "rmse_at_peaks_db": 26.67406573008835,
+    "rmse_off_peaks_db": 7.708586267580689,
+    "error_at_highest_peak_db": 33.83989135742188
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.937977436442509,
+    "mae_db": 4.661268372139661,
+    "r2": 0.38017677766246616,
+    "pearson_r": 0.6862312807251371,
+    "pearson_r_per_spectrum": 0.6850373849765826,
+    "rmse_at_peaks_db": 25.42753388084862,
+    "rmse_off_peaks_db": 7.178158187419926,
+    "error_at_highest_peak_db": 29.491725997924803
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.6527475685729781,
+    "f_t": 0.9150859595422419,
+    "x": 0.6535146127112831,
+    "y": 0.25602563111640136
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iDCO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 81909,
+  "forward": {
+   "rmse_db": 2.5750987559697465,
+   "mae_db": 1.2778001585253846,
+   "r2": 0.9351436065365624,
+   "pearson_r": 0.9671529182786524,
+   "pearson_r_per_spectrum": 0.9669928925927402,
+   "rmse_at_peaks_db": 12.093190172656357,
+   "rmse_off_peaks_db": 1.9647594082467332,
+   "error_at_highest_peak_db": 14.282101233291627
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.18681089648222,
+    "mae_db": 6.479697126090724,
+    "r2": -0.020762276213155184,
+    "pearson_r": 0.4869736259051798,
+    "pearson_r_per_spectrum": 0.48818423764828706,
+    "rmse_at_peaks_db": 29.82937757724977,
+    "rmse_off_peaks_db": 9.396832992435499,
+    "error_at_highest_peak_db": 40.24151664733887
+   },
+   "own_forward_pick": {
+    "rmse_db": 7.791414963148279,
+    "mae_db": 4.568679675485605,
+    "r2": 0.4028536343508943,
+    "pearson_r": 0.6979499526133283,
+    "pearson_r_per_spectrum": 0.6992190034517212,
+    "rmse_at_peaks_db": 25.111356866138394,
+    "rmse_off_peaks_db": 7.034895110227848,
+    "error_at_highest_peak_db": 30.618304977416994
+   },
+   "point_estimate": {
+    "rmse_db": 8.969433463347091,
+    "mae_db": 5.3777855551836895,
+    "r2": 0.2086326133479457,
+    "pearson_r": 0.6074683648986225,
+    "pearson_r_per_spectrum": 0.6070514227339878,
+    "rmse_at_peaks_db": 27.739362079574914,
+    "rmse_off_peaks_db": 8.178584943080509,
+    "error_at_highest_peak_db": 36.61701774597168
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.686817292843568,
+    "mae_db": 4.46835227978982,
+    "r2": 0.4187790763262209,
+    "pearson_r": 0.7053211975257586,
+    "pearson_r_per_spectrum": 0.7042622752992088,
+    "rmse_at_peaks_db": 24.94249346181658,
+    "rmse_off_peaks_db": 6.92858256473289,
+    "error_at_highest_peak_db": 30.255124130249023
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.5852432186245399,
+    "f_t": 0.9090526199124805,
+    "x": 0.6971245505842263,
+    "y": 0.12336420363422806
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iFNO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 188405,
+  "forward": {
+   "rmse_db": 2.3713529333957015,
+   "mae_db": 1.160656686774599,
+   "r2": 0.9450006688390047,
+   "pearson_r": 0.9721432879879658,
+   "pearson_r_per_spectrum": 0.9718633834910179,
+   "rmse_at_peaks_db": 11.200936225765757,
+   "rmse_off_peaks_db": 1.801375719937917,
+   "error_at_highest_peak_db": 12.177853870010376
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 9.874852700202668,
+    "mae_db": 6.185974619032141,
+    "r2": 0.04079954617990056,
+    "pearson_r": 0.5169354206876253,
+    "pearson_r_per_spectrum": 0.5190898842060215,
+    "rmse_at_peaks_db": 29.225728361307468,
+    "rmse_off_peaks_db": 9.089583829621647,
+    "error_at_highest_peak_db": 38.21453155517578
+   },
+   "own_forward_pick": {
+    "rmse_db": 7.764941604544052,
+    "mae_db": 4.504031441267147,
+    "r2": 0.4069046605785749,
+    "pearson_r": 0.7011137869418244,
+    "pearson_r_per_spectrum": 0.7018666742300053,
+    "rmse_at_peaks_db": 24.897877812112196,
+    "rmse_off_peaks_db": 7.019967277300547,
+    "error_at_highest_peak_db": 31.08117950439453
+   },
+   "point_estimate": {
+    "rmse_db": 8.220909395326423,
+    "mae_db": 4.7239023150320465,
+    "r2": 0.33520484319575483,
+    "pearson_r": 0.6646897583308233,
+    "pearson_r_per_spectrum": 0.6657922427834836,
+    "rmse_at_peaks_db": 25.914349386513173,
+    "rmse_off_peaks_db": 7.462966344284595,
+    "error_at_highest_peak_db": 33.30736595153809
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.696602185188577,
+    "mae_db": 4.456604471935386,
+    "r2": 0.41729841048361804,
+    "pearson_r": 0.7050207361388342,
+    "pearson_r_per_spectrum": 0.7036840179574001,
+    "rmse_at_peaks_db": 24.93276340038239,
+    "rmse_off_peaks_db": 6.940338299452096,
+    "error_at_highest_peak_db": 31.13404037475586
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.6116885472084939,
+    "f_t": 0.8686011283920969,
+    "x": 0.7240519890755427,
+    "y": 0.25265549245145386
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iLNO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 83229,
+  "forward": {
+   "rmse_db": 2.3686462319328547,
+   "mae_db": 1.143258804631154,
+   "r2": 0.9451261514767992,
+   "pearson_r": 0.9721764698891594,
+   "pearson_r_per_spectrum": 0.971961955294685,
+   "rmse_at_peaks_db": 11.117928716843547,
+   "rmse_off_peaks_db": 1.8079376144285104,
+   "error_at_highest_peak_db": 12.366988997650147
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.009689052597347,
+    "mae_db": 6.4113563167534,
+    "r2": 0.014425867804805037,
+    "pearson_r": 0.5004504657291642,
+    "pearson_r_per_spectrum": 0.5049744015320455,
+    "rmse_at_peaks_db": 29.313906069411818,
+    "rmse_off_peaks_db": 9.233247907493139,
+    "error_at_highest_peak_db": 37.56229095458984
+   },
+   "own_forward_pick": {
+    "rmse_db": 7.9304152922607765,
+    "mae_db": 4.683959567301297,
+    "r2": 0.38135716900929484,
+    "pearson_r": 0.6869919298873759,
+    "pearson_r_per_spectrum": 0.6880288596939801,
+    "rmse_at_peaks_db": 24.90675505286672,
+    "rmse_off_peaks_db": 7.205520466184483,
+    "error_at_highest_peak_db": 29.25050018310547
+   },
+   "point_estimate": {
+    "rmse_db": 8.443176472495889,
+    "mae_db": 5.000393583228026,
+    "r2": 0.2987710191459122,
+    "pearson_r": 0.6503705265507627,
+    "pearson_r_per_spectrum": 0.6503001393957839,
+    "rmse_at_peaks_db": 26.578805452071965,
+    "rmse_off_peaks_db": 7.667212031982789,
+    "error_at_highest_peak_db": 33.94838966369629
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.817483090064528,
+    "mae_db": 4.573962420720199,
+    "r2": 0.3988511449163761,
+    "pearson_r": 0.6948460141260998,
+    "pearson_r_per_spectrum": 0.6950908043973203,
+    "rmse_at_peaks_db": 24.90581502277471,
+    "rmse_off_peaks_db": 7.078629683466572,
+    "error_at_highest_peak_db": 29.134312438964844
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.6765887314339726,
+    "f_t": 0.9020486466510591,
+    "x": 0.7072625098034275,
+    "y": 0.15111375645367006
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iGNO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 62210,
+  "forward": {
+   "rmse_db": 3.773165353835042,
+   "mae_db": 2.0215755259783164,
+   "r2": 0.8607559352210578,
+   "pearson_r": 0.9282190627993118,
+   "pearson_r_per_spectrum": 0.9271576292465755,
+   "rmse_at_peaks_db": 17.324992762644232,
+   "rmse_off_peaks_db": 2.9261387774589047,
+   "error_at_highest_peak_db": 20.365119970703127
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.17453581810507,
+    "mae_db": 6.54923767191231,
+    "r2": -0.01830372705525285,
+    "pearson_r": 0.4846305811637516,
+    "pearson_r_per_spectrum": 0.4879344202348242,
+    "rmse_at_peaks_db": 29.690643045191035,
+    "rmse_off_peaks_db": 9.391918844065668,
+    "error_at_highest_peak_db": 37.145228958129884
+   },
+   "own_forward_pick": {
+    "rmse_db": 8.065000462066875,
+    "mae_db": 4.784738575501299,
+    "r2": 0.3601813184758812,
+    "pearson_r": 0.6753224070731665,
+    "pearson_r_per_spectrum": 0.6759775607064101,
+    "rmse_at_peaks_db": 25.735108245345053,
+    "rmse_off_peaks_db": 7.299930458043835,
+    "error_at_highest_peak_db": 32.041891479492186
+   },
+   "point_estimate": {
+    "rmse_db": 8.317319895853933,
+    "mae_db": 4.874761555820604,
+    "r2": 0.31952067576863163,
+    "pearson_r": 0.6589007999379695,
+    "pearson_r_per_spectrum": 0.6575987482366185,
+    "rmse_at_peaks_db": 26.432835124868046,
+    "rmse_off_peaks_db": 7.53574861694744,
+    "error_at_highest_peak_db": 32.52410659790039
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.922971605879744,
+    "mae_db": 4.694249250342284,
+    "r2": 0.38251797128001086,
+    "pearson_r": 0.6860733428811793,
+    "pearson_r_per_spectrum": 0.6862843965228059,
+    "rmse_at_peaks_db": 25.38898528719801,
+    "rmse_off_peaks_db": 7.16392485912463,
+    "error_at_highest_peak_db": 31.107491760253907
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.7047191762587015,
+    "f_t": 0.91367586993769,
+    "x": 0.6592973340053122,
+    "y": 0.1536332398457769
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ },
+ {
+  "model": "iSTO",
+  "dataset": "200k_2res_6x3modes",
+  "parameters": 71089,
+  "forward": {
+   "rmse_db": 2.555571862048806,
+   "mae_db": 1.2516628566368078,
+   "r2": 0.9361234852382118,
+   "pearson_r": 0.9675497916671246,
+   "pearson_r_per_spectrum": 0.96721038128098,
+   "rmse_at_peaks_db": 11.707464222681832,
+   "rmse_off_peaks_db": 1.9850205749567431,
+   "error_at_highest_peak_db": 12.98450682144165
+  },
+  "inverse": {
+   "first_sample": {
+    "rmse_db": 10.09562637010238,
+    "mae_db": 6.3957193089482,
+    "r2": -0.0025699007179895705,
+    "pearson_r": 0.494639205585639,
+    "pearson_r_per_spectrum": 0.4975004138449309,
+    "rmse_at_peaks_db": 29.511390379972227,
+    "rmse_off_peaks_db": 9.315901497019244,
+    "error_at_highest_peak_db": 38.80041145324707
+   },
+   "own_forward_pick": {
+    "rmse_db": 7.833305559291763,
+    "mae_db": 4.534568713115299,
+    "r2": 0.39641524965977626,
+    "pearson_r": 0.6952552813833368,
+    "pearson_r_per_spectrum": 0.6957052008760454,
+    "rmse_at_peaks_db": 25.274427510994546,
+    "rmse_off_peaks_db": 7.070745553606641,
+    "error_at_highest_peak_db": 32.38471405029297
+   },
+   "point_estimate": {
+    "rmse_db": 8.409231075635445,
+    "mae_db": 4.883001360212053,
+    "r2": 0.3043982012142249,
+    "pearson_r": 0.6511758966224974,
+    "pearson_r_per_spectrum": 0.6520277432179087,
+    "rmse_at_peaks_db": 26.63163249500738,
+    "rmse_off_peaks_db": 7.625450375994324,
+    "error_at_highest_peak_db": 33.50492790222168
+   },
+   "best_of_samples_oracle": {
+    "rmse_db": 7.74518401066347,
+    "mae_db": 4.4957019285030935,
+    "r2": 0.4099190370598327,
+    "pearson_r": 0.7014627904642657,
+    "pearson_r_per_spectrum": 0.7022883769828538,
+    "rmse_at_peaks_db": 25.09674563263629,
+    "rmse_off_peaks_db": 6.983679487371019,
+    "error_at_highest_peak_db": 31.81480697631836
+   },
+   "design_recovery_pearson_r": {
+    "m": 0.7108133238794342,
+    "f_t": 0.913572780856138,
+    "x": 0.7174840333041522,
+    "y": 0.2246350266510039
+   },
+   "num_targets": 100,
+   "num_samples": 8
+  }
+ }
+]

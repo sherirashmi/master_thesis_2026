@@ -1,0 +1,15 @@
+{
+ "model": "NN",
+ "dataset": "100k_3res_6x3modes",
+ "parameters": 145489,
+ "forward": {
+  "rmse_db": 7.159221060961259,
+  "mae_db": 5.67820740508653,
+  "r2": 0.43580886295861865,
+  "pearson_r": 0.7980060259008734,
+  "pearson_r_per_spectrum": 0.8002922541138949,
+  "rmse_at_peaks_db": 12.580622089195904,
+  "rmse_off_peaks_db": 6.990407091241691,
+  "error_at_highest_peak_db": 16.484441835784914
+ }
+}

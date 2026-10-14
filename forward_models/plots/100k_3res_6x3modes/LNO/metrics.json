@@ -1,0 +1,15 @@
+{
+ "model": "LNO",
+ "dataset": "100k_3res_6x3modes",
+ "parameters": 152011,
+ "forward": {
+  "rmse_db": 2.687582159976969,
+  "mae_db": 1.3071526803228943,
+  "r2": 0.9204906481194968,
+  "pearson_r": 0.9641550642201707,
+  "pearson_r_per_spectrum": 0.9656579968453723,
+  "rmse_at_peaks_db": 5.780590228369877,
+  "rmse_off_peaks_db": 2.5765256173428956,
+  "error_at_highest_peak_db": 5.132465351867676
+ }
+}

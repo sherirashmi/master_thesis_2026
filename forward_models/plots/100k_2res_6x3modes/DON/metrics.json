@@ -1,0 +1,15 @@
+{
+ "model": "DON",
+ "dataset": "100k_2res_6x3modes",
+ "parameters": 144756,
+ "forward": {
+  "rmse_db": 3.9391901614389613,
+  "mae_db": 2.4164440270243293,
+  "r2": 0.8369394571438025,
+  "pearson_r": 0.9404502853708158,
+  "pearson_r_per_spectrum": 0.9428201498481876,
+  "rmse_at_peaks_db": 7.1513992596280715,
+  "rmse_off_peaks_db": 3.850117336690003,
+  "error_at_highest_peak_db": 7.385162519073487
+ }
+}

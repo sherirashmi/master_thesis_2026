@@ -1,0 +1,15 @@
+{
+ "model": "SIREN",
+ "dataset": "100k_2res_6x3modes",
+ "parameters": 145820,
+ "forward": {
+  "rmse_db": 1.5377516207006594,
+  "mae_db": 0.7641929476284901,
+  "r2": 0.9751510880293925,
+  "pearson_r": 0.9879248887683609,
+  "pearson_r_per_spectrum": 0.9886099668786646,
+  "rmse_at_peaks_db": 4.315486060772133,
+  "rmse_off_peaks_db": 1.4310957792358536,
+  "error_at_highest_peak_db": 4.03097153930664
+ }
+}

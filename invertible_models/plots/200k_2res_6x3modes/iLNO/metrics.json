@@ -1,0 +1,65 @@
+{
+ "model": "iLNO",
+ "dataset": "200k_2res_6x3modes",
+ "parameters": 83229,
+ "forward": {
+  "rmse_db": 2.3686462319328547,
+  "mae_db": 1.143258804631154,
+  "r2": 0.9451261514767992,
+  "pearson_r": 0.9721764698891594,
+  "pearson_r_per_spectrum": 0.971961955294685,
+  "rmse_at_peaks_db": 11.117928716843547,
+  "rmse_off_peaks_db": 1.8079376144285104,
+  "error_at_highest_peak_db": 12.366988997650147
+ },
+ "inverse": {
+  "first_sample": {
+   "rmse_db": 10.009689052597347,
+   "mae_db": 6.4113563167534,
+   "r2": 0.014425867804805037,
+   "pearson_r": 0.5004504657291642,
+   "pearson_r_per_spectrum": 0.5049744015320455,
+   "rmse_at_peaks_db": 29.313906069411818,
+   "rmse_off_peaks_db": 9.233247907493139,
+   "error_at_highest_peak_db": 37.56229095458984
+  },
+  "own_forward_pick": {
+   "rmse_db": 7.9304152922607765,
+   "mae_db": 4.683959567301297,
+   "r2": 0.38135716900929484,
+   "pearson_r": 0.6869919298873759,
+   "pearson_r_per_spectrum": 0.6880288596939801,
+   "rmse_at_peaks_db": 24.90675505286672,
+   "rmse_off_peaks_db": 7.205520466184483,
+   "error_at_highest_peak_db": 29.25050018310547
+  },
+  "point_estimate": {
+   "rmse_db": 8.443176472495889,
+   "mae_db": 5.000393583228026,
+   "r2": 0.2987710191459122,
+   "pearson_r": 0.6503705265507627,
+   "pearson_r_per_spectrum": 0.6503001393957839,
+   "rmse_at_peaks_db": 26.578805452071965,
+   "rmse_off_peaks_db": 7.667212031982789,
+   "error_at_highest_peak_db": 33.94838966369629
+  },
+  "best_of_samples_oracle": {
+   "rmse_db": 7.817483090064528,
+   "mae_db": 4.573962420720199,
+   "r2": 0.3988511449163761,
+   "pearson_r": 0.6948460141260998,
+   "pearson_r_per_spectrum": 0.6950908043973203,
+   "rmse_at_peaks_db": 24.90581502277471,
+   "rmse_off_peaks_db": 7.078629683466572,
+   "error_at_highest_peak_db": 29.134312438964844
+  },
+  "design_recovery_pearson_r": {
+   "m": 0.6765887314339726,
+   "f_t": 0.9020486466510591,
+   "x": 0.7072625098034275,
+   "y": 0.15111375645367006
+  },
+  "num_targets": 100,
+  "num_samples": 8
+ }
+}
